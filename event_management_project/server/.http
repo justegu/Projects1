@@ -1,0 +1,24 @@
+###
+GET http://localhost:5000/api/users
+
+###
+POST http://localhost:5000/api/users
+content-type: application/json
+
+{ 
+"name": "Ben", 
+"surname": "Dobrooooogloo", 
+"email": "BenDoob@example.com", 
+"age": 4
+}
+
+###
+PUT http://localhost:5000/api/users/64acf78582fb7f5b03254f6f
+content-type: application/json
+
+{ 
+"age": 50
+}
+
+###
+DELETE http://localhost:5000/api/users/64acf771de7c9aa1083d5872
