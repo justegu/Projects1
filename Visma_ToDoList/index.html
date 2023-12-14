@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section class="todo-app-container">
+        <div class="todo-input">
+          <input
+            class="todo-input__todo-description"
+            type="text"
+            maxlength="160"
+            placeholder="Add a new task"
+            required
+          />
+          <input class="todo-input__todo-deadline" type="datetime-local" />
+          <button class="todo-input__add-button">Add</button>
+        </div>
+        <div class="sorting-container">
+          <p class="sorting-option active sorting-container__recently-added">
+            Recently added
+          </p>
+          <p class="sorting-option sorting-container__deadline">Deadline</p>
+          <p class="sorting-option sorting-container__recently-completed-items">
+            Recently completed items
+          </p>
+        </div>
+        <div class="todo-output">
+          <div class="todo-output__todo-tasks"></div>
+          <p class="todo-output__no-tasks-text">You don't have any task here</p>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

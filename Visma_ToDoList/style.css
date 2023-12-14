@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+}
+
+body {
+  background-color: #3c87ff;
+}
+
+main {
+  margin: 20px;
+}
+
+/* Todo app container START */
+.todo-app-container {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  border-radius: 7px;
+  background-color: #fff;
+}
+
+/* Todo app container END */
+
+/* Input container START */
+.todo-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+  padding: 20px 10px;
+
+  & input {
+    width: 70%;
+    height: 35px;
+    padding: 0 25px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    outline: none;
+
+    &::placeholder {
+      color: #bfbfbf;
+    }
+    &:focus {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  & button {
+    width: 40%;
+    padding: 7px 13px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: #3c87ff;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+/* New task input container END */
+
+/* Sorting container START */
+.sorting-container {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 20px;
+  justify-content: space-evenly;
+
+  font-size: 14px;
+
+  border-bottom: 1px solid #ccc;
+
+  & p {
+    cursor: pointer;
+  }
+}
+
+.sorting-option.active {
+  font-weight: bold;
+  color: #3c87ff;
+}
+
+/* Sorting container END */
+
+/* Output container START */
+.todo-output {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin: 15px 0;
+
+  & p {
+    display: block;
+  }
+}
+
+.task-container-label {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  gap: 15px;
+  padding: 10px 0;
+
+  border-bottom: 1px solid #ccc;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+.task-container-label__task-container-div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+
+  & button {
+    padding: 7px 13px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: #3c87ff;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+.task-container-label__task-container-div__task-inputs-div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.task-container-label__task-container-div__task-inputs-div__deadline-text {
+  font-size: 12px;
+}
+
+.todo-output__no-tasks-text {
+  padding: 30px 0;
+  margin: 0 auto;
+}
+
+.completed-task {
+  text-decoration: line-through;
+}
+
+/* Output container END */
